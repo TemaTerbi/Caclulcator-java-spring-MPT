@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet"  href="/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <p th:text="'Калькулятор'" />
+</div>
+<div class="centerWrapper">
+    <div class="formWrapper">
+        <form method="post" action="/res">
+            <input id="1" name="firstNumber" type="text">
+            <input id="2" name="secondNumber" type="text">
+            <div class="action-wrapper">
+                <select id="3" name="operations">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="submit" value="Посчитать">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
